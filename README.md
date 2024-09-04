@@ -1,2 +1,2 @@
-# nx1-gsc-dump
+# NX1 GSC Dump
 CoD NX1 (Future Warfare) GSC Dump
