@@ -1,0 +1,4922 @@
+// syntax:
+// float	floatVar
+// int 		intVar
+// string	stringVar
+
+// Keys that show up in the Radiant shift-g menu go here
+
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_breachgroup"
+"Summary: int - Rooms with multiple breachable doors should have each breach prefab set with the same script_breachGroup number (but unique script_slowmo_breach numbers). Doors not triggered by the player will be breached either by friendlies (if level.breachfriendlies are defined) or opened normally."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_breachgroup	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_emptyspawner"
+"Summary: int - When you go through a trigger with this on it, any spawners that have the same # will have their count set to 0."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_emptyspawner
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_goalvolume"
+"Summary: int - groups guys so they use a goalvolume"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_goalvolume
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_group"
+"Summary: another generic index"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_group
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_index"
+"Summary: int - can be used generically as an index for whatever reason"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_index 		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_killspawner"
+"Summary: int - When you go through a trigger with this on it, any spawners that have the same # will be deleted."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_killspawner 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_kill_vehicle_spawner"
+"Summary: int - Deletes the vehicle spawner when the trigger is touched. Group vehicle spawners and triggers."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_kill_vehicle_spawner
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_random_killspawner"
+"Summary: int - group a trigger with some spawners"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_random_killspawner 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_randomspawn"
+"Summary: int - use with a script_random_killspawner - script will randomly spawn one of the groups"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_randomspawn 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_spawnsubgroup"
+"Summary: int - group of ai spawned from spawngroup_trigger"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_spawnsubgroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_spawngroup"
+"Summary: int - one of the script_spawnsubgroups will spawn from an spawngroup_trigger"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_spawngroup	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_spawngroup"
+"Summary: int - All entities related to breaching get grouped with this key. Use prefabs/slowmo_breach.map to define the door."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_slowmo_breach
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_spawngroup"
+"Summary: int - Place spawners with targetname "breach_enemy_spawner" and "breach_hostage_spawner". When a breach starts, one of these groups will spawn."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_slowmo_breach_spawners	
+
+
+
+// Below are keys that will not show up in the Radiant shift-g menu:
+
+/*
+=============
+///ScriptDocBegin
+"Name: .origin"
+"Summary: vector - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+vector	origin
+
+/*
+=============
+///ScriptDocBegin
+"Name: .angles"
+"Summary: vector - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+vector	angles
+
+/*
+=============
+///ScriptDocBegin
+"Name: .export"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		export
+
+/*
+=============
+///ScriptDocBegin
+"Name: .spawnflags"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		spawnflags
+
+/*
+=============
+///ScriptDocBegin
+"Name: .radius"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		radius
+
+/*
+=============
+///ScriptDocBegin
+"Name: .speed"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	speed
+
+/*
+=============
+///ScriptDocBegin
+"Name: .target"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	target
+
+/*
+=============
+///ScriptDocBegin
+"Name: .targetname"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	targetname
+
+/*
+=============
+///ScriptDocBegin
+"Name: .nx_verbtype"
+"Summary: string - assigns verbtype suffix for a player-character verb box, and NPC verb layers"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  nx_verbtype  
+
+/*
+=============
+///ScriptDocBegin
+"Name: .nx_posverbtype"
+"Summary: string - assigns verbtype suffix for a positional-verb box"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  nx_posverbtype
+
+/*
+=============
+///ScriptDocBegin
+"Name: .nx_tietoexciter"
+"Summary: string - assigns an exciter to a postional-verb box"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  nx_tietoexciter 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .groupname"
+"Summary: string -"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	groupname
+
+/*
+=============
+///ScriptDocBegin
+"Name: .name"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	name
+
+/*
+=============
+///ScriptDocBegin
+"Name: .door_time_remain_open"
+"Summary: float - used in _killingDoor.gsc, specifying the amount of time the double doors will remain open"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float   door_time_remain_open      
+
+/*
+=============
+///ScriptDocBegin
+"Name: .door_time_remain_close"
+"Summary: float - used in _killingDoor.gsc, specifying the amount of time the double doors will remain close"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float   door_time_remain_close    
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_wait"
+"Summary: float - Script will wait this long between actions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_wait	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_wait_min"
+"Summary: float - Minimum wait time between actions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_wait_min
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_wait_max"
+"Summary: float - Maximum wait time between actions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_wait_max		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_wait_add"
+"Summary: float - Additive delay is the # of seconds extra added between actions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/		
+float	script_wait_add	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_delay"
+"Summary: float - Action will be delayed for this long before triggering"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_delay
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_delay_post"
+"Summary: float - Action will be delayed for this long before triggering...if used in conjunction with script_flag_wait, then script_delay_post will wait for the flag - THEN wait the delay time as apposed to script delay which waits first, THEN checks the flag"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_delay_post
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_delay_min"
+"Summary: float - Minimum delay before action is triggered"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_delay_min
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_delay_max"
+"Summary: float - Maximum delay before action is triggered"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_delay_max
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_burst"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_burst
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_burst_min"
+"Summary: float - Put on an mg turret, min time of a burst"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_burst_min 			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_burst_max"
+"Summary: float - Put on an mg turret, max time of a burst"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_burst_max
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_reuse"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_reuse
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_reuse_min"
+"Summary: float - Minimum time before a new AI will use this turret."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_reuse_min
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_reuse_max"
+"Summary: float - Maximum time before a new AI will use this turret."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_reuse_max
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_faceenemydist"
+"Summary: float - Override the self.maxFaceEnemyDist"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_faceenemydist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .delay"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	delay
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_suppression"
+"Summary: float - Suppression wait for this AI"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_suppression			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .height"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	height
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_falldirection"
+"Summary: float - Used to specify the direction a treeburst tree trunk falls towards"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_falldirection
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_timeout"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_timeout
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_accuracy"
+"Summary: float - Set this on AI to have them spawn with a modified accuracy"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_accuracy
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_attackeraccuracy"
+"Summary: float - Sets the attackeraccuracy on the ai"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_attackeraccuracy	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_startrunning"
+"Summary: int - makes an ai start off running when they spawn rather than doing an exit"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_startrunning
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_cheap"
+"Summary: int - makes vehicles lose some functionality but be far fewer variables"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_cheap
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_pacifist"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_pacifist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ignoreme"
+"Summary: int - If this setting exists on a spawner this guy will have his .ignoreme set to true"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_ignoreme		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ignore_suppression"
+"Summary: int - sets .ignoreSuppression to true if its set."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/			
+int		script_ignore_suppression	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ignoreall"
+"Summary: int - sets .ignoreall to true if its set."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_ignoreall
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_laser"
+"Summary: int - set so an AI has a laser from their weapon."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_laser
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_worldaligned"
+"Summary: int - set if this is a world-aligned helicopter support path"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_worldaligned
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_repeat"
+"Summary: int - # of times an effect in an exploder will repeat"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_repeat
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fxstart"
+"Summary: int - Identifies effects so they can be turned on by grouping with a trigger"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_fxstart
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fxstop"
+"Summary: int - Identifies effects so they can be turned off by grouping with a trigger"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_fxstop
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_damage"
+"Summary: int - Damage of radius damage on an exploder"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_damage
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_firefxdelay"
+"Summary: float - repetition rate on a firefx for exploders"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_firefxdelay
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_firefxtimeout"
+"Summary: float - Amount of time before a looping effect fades out"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_firefxtimeout
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_firefx"
+"Summary: string - Fx to play infinitely from a used exploder"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_firefx
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_presound"
+"Summary: string - To play sounds on exploders before the explosion, for pathfinder only"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_presound
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ender"
+"Summary: string - Stop a looping effect"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_ender
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_firefxsound"
+"Summary: string - Looping sound for an exploder firefx"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_firefxsound
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_brake"
+"Summary: string - the amount to brake from a brake trigger"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_brake
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_angles"
+"Summary: vector - generic angles storage"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+vector	script_angles
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_delete"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_delete
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_increment"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_increment
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_chatgroup"
+"Summary: int - used in cliffhanger to group patroller together and make conversations"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_chatgroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_patroller"
+"Summary: int - turns this guy into a patroller"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_patroller 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_pet"
+"Summary: int - set on a AI and a dog to create a pet out of the dog"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_pet
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stealth"
+"Summary: int - turns on stealth system for this ai"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_stealth
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stealthgroup"
+"Summary: int - puts the AI into a stealth group that is seperate from the notifications and awareness of a different stealth group"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_stealthgroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stealth_dontseek"
+"Summary: int - dont set your goalpos to the enemy's goalpos on combat"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_stealth_dontseek	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stealth_function"
+"Summary: string - key which references the main stealth function to run at spawn for this ai"
+"Module: Stub"
+"NoteLine: make sure in script to use stealth_set_default_stealth_function( <key>, <func> ) to set the key to reference the function you want."
+"NoteLine: The stealth function should call stealth_basic() and any other parameters / functions specific for that ai."
+"NoteLine: You can obviously have more than one default function for the level and reference them with keys which corrispond to script_stealth_function set on the spawner"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_stealth_function	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_idleanim"
+"Summary: int - starts this guy in an idel anim...if script_animation isn't set, then it picks a random one."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_idleanim
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_idlereach"
+"Summary: int - like idleanim, but the guy reaches his goal first...if script_animation isn't set, then it picks a random one."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_idlereach
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_offtime"
+"Summary: int - Number of milliseconds before guys get off a flak when you hit the off-trigger, defaults to 20000"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_offtime	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_offradius"
+"Summary: int - Guys get off a flak if a player gets this close to a flak after hitting the off-trigger, default 350"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_offradius
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_autosavename"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_autosavename
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_autosave"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_autosave
+
+/*
+=============
+///ScriptDocBegin
+"Name: .count"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		count
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_timer"
+"Summary: int - Timeout for friendly_chat"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_timer
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_delayed_playerseek"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_delayed_playerseek
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_triggered_playerseek"
+"Summary: int - group a trigger and an ai with this and he the grouped ai will do playerseek behaviour when the trigger is hit"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_triggered_playerseek	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_playerseek"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_playerseek
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_seekgoal"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_seekgoal
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_start"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_start
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_radius"
+"Summary: int - Sets an AI's starting goal radius. On an exploder this sets the radius damage's radius."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_radius	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_goalheight"
+"Summary: int - Sets an AI's starting goal height."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_goalheight
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_followmin"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_followmin
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_followmax"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_followmax
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_startinghealth"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_startinghealth
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fallback"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_fallback
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_grenades"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_grenades
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fightdist"
+"Summary: int - Spawners will spawn with this pathEnemyFightDist"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_fightdist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_maxdist"
+"Summary: int - Spawners will spawn with this pathEnemyLookAhead"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_maxdist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_moveoverride"
+"Summary: int - Spawners with this will go to their (targetted) node before fighting."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_moveoverride 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_combatmode"
+"Summary: string - Spawners will spawn with self.combatMode set to this value (ex. "ambush", "ambush_nodes_only."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/		
+string	script_combatmode
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nosurprise"
+"Summary: int - Cant be shocked, surprised, or startled."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_nosurprise 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_percent"
+"Summary: int - for ending physics explosions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_percent	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehiclecargo"
+"Summary: int - used for helis that have attached cargo. Example: seaknight with a scriptLinkTo a cargo net or hanging humvee will attach that cargo and carry it"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_vehiclecargo	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehiclenodegroup"
+"Summary: int - used for getting an array of vehicle nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_vehiclenodegroup 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mg42auto"
+"Summary: int - When you hit this trigger any grouped mg42s will go into auto mode and clear target."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_mg42auto	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_requires_player"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_requires_player
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sightrange"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_sightrange
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fallback_group"
+"Summary: int - Makes stray spawned guys part of bigger falling back movements."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_fallback_group
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehiclegroup"
+"Summary: int - links a vehicle to its spawners"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_vehiclegroup	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicle_selfremove"
+"Summary: int - vehicle will delete itself when it reaches the end of its path"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_vehicle_selfremove
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicle_player"
+"Summary: int -"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_vehicle_player
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_exploder"
+"Summary: string - Grouping things that explode"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_exploder
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_exploder_delay"
+"Summary: int - makes an exploder delay before going off (for exploders triggered by vehicle paths)."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_exploder_delay
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_prefab_exploder"
+"Summary: int - Override an exploder since exploders in prefabs get unique'd."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_prefab_exploder
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_balcony"
+"Summary: int - current mechanism for flagging an actor to test for balcony death"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_balcony
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mgturret"
+"Summary: int - Group AI with a node that targets an mg42 and the AI will keep the gun in use."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_mgturret	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_plane"
+"Summary: int - Specifies which plane set this is, so they can all be started together."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_plane	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_explode"
+"Summary: int - Tells a plane to explode with this exploder."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_explode
+
+/*
+=============
+///ScriptDocBegin
+"Name: .dontdropweapon"
+"Summary: int - If set, the AI will not drop a weapon when he dies"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		dontdropweapon
+
+/*
+=============
+///ScriptDocBegin
+"Name: .dontdrawoncompass"
+"Summary: int - If set, the AI will not be drawn on the player's compass. Only matters for friendlies"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		dontdrawoncompass
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_usemg42"
+"Summary: int - If set to false, a friendly will not use be told by friendly_mg42 triggers to use an mg42."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_usemg42
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stoptoshoot"
+"Summary: int - used for tanks, setting this to greater than zero will make a tank stop before firing it's main cannon"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_stoptoshoot
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_startingposition		// used for riders of vehicles to manually designate riding postions (also used for walkers)"
+"Summary: int - used for riders of vehicles to manually designate riding postions (also used for walkers)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_startingposition
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_turretmg"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_turretmg
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_forcegrenade"
+"Summary: int - Set to 1 to enable AI to throw as many grenades as they want rather than extremely rarely."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_forcegrenade
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stack"
+"Summary: int - for walls where friendlies hang out"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_stack
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nofriendlywave"
+"Summary: int - disables tracking of this ai for friendly_wave's"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_nofriendlywave	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_forcegoal"
+"Summary: int - forces an AI to use the goal radius of the node they target, rather than switch to 2000 (for flood_and_secure spawners)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_forcegoal	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_dontpeek"
+"Summary: int - forces an AI to not peek out at a cover node"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_dontpeek	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_disconnectpaths"
+"Summary: int - makes exploder script_brushes connectpaths when hidden and disconnect when shown. could be used to disable cover nodes."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_disconnectpaths
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nowall"
+"Summary: int - make AI play a special set of corner animations that dont require a wall"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_nowall
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_longdeath"
+"Summary: int - set to 0 disable long death animations like lying on the ground and shooting"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_longdeath	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .diequietly"
+"Summary: AI dies quietly when this is set, no shooting deaths eiter"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_diequietly
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_displaceable"
+"Summary: int - makes an AI able to change his goal radius from animscript."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_displaceable
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_grenadespeed"
+"Summary: int - used for setting magic grenade launch speeds on script origins"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_grenadespeed
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_maxspawn"
+"Summary: int - used on flood spawn trigger to regulate the max number of ai"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_maxspawn	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_battlechatter"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_battlechatter
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_trigger_group"
+"Summary: int - used to disable a group of triggers when one gets hit."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_trigger_group
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_breach_id"
+"Summary: int - used on a door to force a special type of breach."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_breach_id
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_slowmo_breach_doortype"
+"Summary: string - The kind of door that will be used in the breach sequence (metal, wood, etc)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_slowmo_breach_doortype	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_airspeed"
+"Summary: int - used in checks for setting speed on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_airspeed		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_yawspeed"
+"Summary: int - used in checks for setting yaw speed on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_yawspeed	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_forceyaw"
+"Summary: int - used in checks for a target or goal yaw on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_forceyaw		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_cleartargetyaw"
+"Summary: int - used in checks to reset a target yaw on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_cleartargetyaw	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_accel"
+"Summary: int - used in checks to change the acceleration on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float 	script_accel
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_decel"
+"Summary: int - used in checks to change the deceleration on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float 	script_decel	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_engage"
+"Summary: int - used in checks to fire weapons on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_engage	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_engageDelay"
+"Summary: int - used in checks to delay weapons firing on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_engageDelay	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_hoverwait"
+"Summary: int - used in checks to set hovering times on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_hoverwait
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_pilottalk"
+"Summary: int - used in checks to trigger dialogue on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_pilottalk			// used in checks to trigger dialogue on helicopter path origins or nodes
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_airresistance"
+"Summary: int - makes a helicopter stay tilted forwards, set on node."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_airresistance
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_attackPattern"
+"Summary: string - used in checks to control weapons firing on helicopter path origins or nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_attackPattern
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_firelink"
+"Summary: string - tells heli to shoot at the script_linked origin with the named fire pattern."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_firelink		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_land"
+"Summary: int - true on a final path node makes the heli land there"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_land		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_helimove"
+"Summary: string - set the helimove type on a node, makes the heli move/turn a certain way"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_helimove
+
+// nx_miniuav ---
+/*
+=============
+///ScriptDocBegin
+"Name: .script_behaviortype"
+"Summary: string - pathing, circling, searching, notifying"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_behaviortype
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_circlenodes"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_circlenodes
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_searchnodes"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_searchnodes
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sightdist"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int     script_sightdist
+// --------------
+
+// _nx_moving_platform ---
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_moving_platform_geo"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_moving_platform_geo
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_moving_platform_script"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_moving_platform_script
+// --------------
+
+// _retreat	-----
+/*
+=============
+///ScriptDocBegin
+"Name: .script_retreat"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_retreat
+// --------------
+
+// _locked_combat
+/*
+=============
+///ScriptDocBegin
+"Name: .script_locked_combat_node"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string script_locked_combat_node
+// --------------
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_objective"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_objective
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_friendname"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_friendname
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_noteworthy"
+"Summary: string - Used to get a string for scripted sequences mainly."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_noteworthy
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_parameters"
+"Summary: string - generic string used for similar purpose as script_noteworthy"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_parameters
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_triggername"
+"Summary: string - Z: used for elevators in the dam"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_triggername	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fxcommand"
+"Summary: string - What to do with the effect"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_fxcommand		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fxid"
+"Summary: string - The id of the effect to do"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_fxid					// The id of the effect to do
+
+/*
+=============
+///ScriptDocBegin
+"Name: .weaponinfo"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	weaponinfo
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_hidden				// the thing which is hidden and appears later (mortars)"
+"Summary: string - the thing which is hidden and appears later (mortars)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_hidden
+
+/*
+=============
+///ScriptDocBegin
+"Name: .vehicletype"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	vehicletype
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_personality"
+"Summary: string - This guy will use this personality type"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_personality	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_squadname			// squad (spawner cluster) identifier"
+"Summary: string - squad (spawner cluster) identifier"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_squadname
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nodestate"
+"Summary: string - generic identifier for nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_nodestate
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_assaultnode"
+"Summary: string - generic identifier for nodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_assaultnode	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_team					// how to know which team a tank is on (needed to free up target/targetname for radiant linkability)"
+"Summary: string - how to know which team a tank is on (needed to free up target/targetname for radiant linkability)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string 	script_team			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mortargroup"
+"Summary: string - to group mortars with their triggers"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string 	script_mortargroup	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .ambient"
+"Summary: string - String index of the level.ambient_track to play on this trigger."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	ambient				
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_gameobjectname"
+"Summary: string - Used in multiplayer to add/remove entities based on gametype."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_gameobjectname 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_gametype_dm"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on gametype."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_gametype_dm	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_gametype_tdm"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on gametype."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_gametype_tdm	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_gametype_ctf"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on gametype."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_gametype_ctf		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_gametype_hq"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on gametype."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_gametype_hq	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_gametype_sd"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on gametype."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_gametype_sd		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mapsize_08"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on the set mapsize."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_mapsize_08		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mapsize_16"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on the set mapsize."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_mapsize_16		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mapsize_32"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on the set mapsize."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_mapsize_32			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mapsize_64"
+"Summary: string - Preston: Used in multiplayer to add/remove entities based on the set mapsize."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_mapsize_64		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sound"			
+"Summary: string - Plays level.scr_sound ["string"]"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_sound	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_animation"
+"Summary: string - If defined, patrollers will play a random pause animation at this node."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_animation			// If defined, patrollers will play a random pause animation at this node.
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_difficulty"
+"Summary: string - set to easy or hard...easy will only include spawners for easy and normal difficulty, hard will only include spawners for hardened and veteran"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_difficulty	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_destructable_area 	// used to let destructable walls block off areas of the map (affects spawning, for instance)"
+"Summary: string - used to let destructable walls block off areas of the map (affects spawning, for instance)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_destructable_area 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_earthquake"
+"Summary: string - References level.earthquake variables to do an earthquake"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_earthquake	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_followmode"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_followmode
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_skilloverride"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_skilloverride
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_bctrigger"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_bctrigger
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_bcdialog				//set to 0 on a spawner/ai when you want to turn off battlechatter forever on that individual"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_bcdialog		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_aigroup"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_aigroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_objective_active"
+"Summary: string - used with flood_and_Secure and "friendlychain"s to only be active if this objective"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_objective_active
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_objective_inactive"
+"Summary: string - is active"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_objective_inactive 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_threatbiasgroup"
+"Summary: string - adds spawned ai to this threatbiasgroup"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_threatbiasgroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_threatbias"
+"Summary: int - set default threatbias for this ai"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_threatbias
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_aresgroup"
+"Summary: string - Groups ares together"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_aresgroup 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_aresarea"
+"Summary: string - Specifies a group of nodes for an aresgroup to use"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_aresarea
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_squad"
+"Summary: string - Group spawners/ai so they share enemy information"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_squad
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_area"
+"Summary: string - used by battlechatter system"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_area	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_location"
+"Summary: string - used by battlechatter system"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_location
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_landmark"
+"Summary: string - used by battlechatter system"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_landmark	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flag_true"
+"Summary: string - This entity should not activate unless at least one of the flags in this string is true"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_flag_true
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flag_false"
+"Summary: string - This entity should not activate unless all the flags in this string are false"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_flag_false
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flag"
+"Summary: string - the flag that gets enabled/disabled by targetname flag_set and flag_unset"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_flag	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ent_flag_set"
+"Summary: Set an ent flag when a vehicle hits this node"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_ent_flag_set	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ent_flag_clear"
+"Summary: Clear an ent flag when a vehicle hits this node"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_ent_flag_clear	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flag_set"
+"Summary: string - helis using helipath will set this flag when they reach this point"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_flag_set
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flag_wait"
+"Summary: string - helis using helipath will wait at this point until this flag is set"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_flag_wait	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flag_clear"
+"Summary: string - clears the flag when it hits this spot"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_flag_clear	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_color_allies"
+"Summary: string - groups allied AI with nodes/triggers of that color"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_color_allies		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_color_axis"
+"Summary: string - groups axis AI with nodes/triggers of that color"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_color_axis
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_forcecolor"
+"Summary: string - forces an AI to use all nodes of this color"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string  script_forcecolor
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_colorlast"
+"Summary: int - the AI will choose nodes with this defined after nodes without it"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/			
+int		script_colorlast
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_linkName"
+"Summary: string - Works with script_linkTo"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_linkName	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_linkTo"
+"Summary: string - A compound string that is a list of script_linkname'd entities that this entity links to."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_linkTo	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_wtf"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_wtf
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_type"
+"Summary: Used for MP soft landing"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_type
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stance"
+"Summary: string - General purpose string identifier useful for stance related scripting"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_stance			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_namenumber"
+"Summary: string - General purpose string identifier that used to be in this file that I use frequently"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_namenumber	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_battleplan"
+"Summary: string - General purpose string identifier used for unique AI directives on spawn"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_battleplan
+
+// destructable stuff
+/*
+=============
+///ScriptDocBegin
+"Name: .script_accumulate"
+"Summary: int - damage that must accumulate for destruction to occur"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int     script_accumulate 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_threshold"
+"Summary: int - min damage that has any effect"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int     script_threshold  			// min damage that has any effect
+
+// vehicle stuff
+/*
+=============
+///ScriptDocBegin
+"Name: .script_AI_invulnerable"
+"Summary: int - Vehicles with script_AI_invulnerable set to 1 cannot be damaged by AI weapons"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_AI_invulnerable	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_missiles"
+"Summary: int - used to determine whether to fire missiles in _attack_heli.gsc"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_missiles
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_spotlight"
+"Summary: int - set to 1 to enable a spotlight for a helicopter using global logic in _attack_heli.gsc"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_spotlight
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_turret"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_turret
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_gatetrigger"
+"Summary: int - vehicles will wait at vehicle nodes with this untill the trigger is hit."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_gatetrigger
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_VehicleSpawngroup 	// spawns associated vehicles and their aigroups (as still designated by script_vehiclegroup on the vehicles and the ai's)"
+"Summary: int - spawns associated vehicles and their aigroups (as still designated by script_vehiclegroup on the vehicles and the ai's)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_VehicleSpawngroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_VehicleStartMove"
+"Summary: int - initiates associated vehicles movement on its path, note that if no script_vehicleStart nodes or triggers exist then the vehicle will stay and wait for the level script to initiate it's movement stacking this with script_VehicleSpawngroup will make spawn and go right away."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_VehicleStartMove 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicleGroupDelete 	// Deletes associated vehicles and their aigroups (as still designated by script_vehiclegroup on the vehicles and the ai's)"
+"Summary: int - Deletes associated vehicles and their aigroups (as still designated by script_vehiclegroup on the vehicles and the ai's)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_vehicleGroupDelete 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_physicsjolt"
+"Summary: int - toggle tanks shaking physics as it drives by."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_physicsjolt 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_unload"
+"Summary: string - tells the vehicle to unload this group of guys"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_unload
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_pathtype"
+"Summary: string - veh_pathtype for the physics vehicle. Constrained or follow. Set on vehicle spawner"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_pathtype	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_transmission"
+"Summary: string - veh_transmission for the physics vehicle. forward or reverse. Set on node"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_transmission	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_dontunloadonend"
+"Summary: int - set this on a vehicle spawner to make it not unload the guys at the end of the path"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_dontunloadonend
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flare"
+"Summary: int - play a flare anim on a vehicle."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_flare 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_deathroll"
+"Summary: int - turns on and off deathroll for vehicles crossing paths"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_deathroll	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_crashtype"
+"Summary: string - designates a crashpath"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_crashtype
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_crashtypeoverride"
+"Summary: string - override the type of crash a vehicle will do when it dies values are "tank", "mobile""
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_crashtypeoverride	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nomg"
+"Summary: int - makes machineguns not spawn at all on a tank. used for big tank battles where they aren't necessary on all the tanks."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_nomg			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_badplace"
+"Summary: int - no badplaces on tanks.  for tanks that won't be near ai. on big tank battles."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_badplace		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_dronelag"
+"Summary: float - amount of timed space between drones following vehicle paths"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_dronelag			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fireondrones"
+"Summary: int - toggles machineguns firing on drones behavior"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_fireondrones	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_moveplaybackrate"
+"Summary: float - rate to move drones at. defaults to 1."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_moveplaybackrate
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicleride"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_vehicleride
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicle_child"
+"Summary: int - assigns a child to this vehicle. Used for vehicle unload."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_vehicle_child
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicle_parent"
+"Summary: int - assigns a parent to this vehicle. Used for vehicle unload."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_vehicle_parent
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_unloadmgguy"
+"Summary: int - set this on the halftrack to make the mg guy unload."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_unloadmgguy	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_keepdriver"
+"Summary: int - set this on the vehicle to make the vehilce driver not unload."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_keepdriver	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicledetour"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_vehicledetour
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_avoidvehicles"
+"Summary: int - setting to 0 on a tank will make it not do collision avoidance stuff"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_avoidvehicles
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_avoidplayer"
+"Summary: int - setting to 1 will cause the tank to perform collision avoidance on the player"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_avoidplayer 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_playerconeradius"
+"Summary: float - used optionally with script_avoidplayer if you want a cone radius other than 200."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_playerconeradius 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicledetourtype"
+"Summary: string - describing how a vehicledetour node works,  first non default type being "scriptswitch" which will let the script notify the path to become a switch node. Useful in situations where a tank will fight in circles and then procede on whatever script condition."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_vehicledetourtype	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_attackspeed"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_attackspeed
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_unloaddelay"
+"Summary: int - make a vehicle delay this long before unloading at the end of a path. < 1 means never unload // nate we should remove this or make it work on all of the unloads."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_unloaddelay	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_cobratarget"
+"Summary: int - set to 1 to create a target for this entity on pilotcobra missions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_cobratarget	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_targettype"
+"Summary: string - "air" or "ground" - used for helicopter pilot levels"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_targettype		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_targetoffset_z"
+"Summary: float - offset from model where missiles should aim - used for helicopter pilot levels"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_targetoffset_z		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_wingman"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_wingman
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_turningdir"
+"Summary: string - set this to the direction of the anim set you want a vehicle to use.  "right","hard_right","left","hard_left","forward""
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_turningdir	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_bombmode_original"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_bombmode_original
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_bombmode_single"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_bombmode_single
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_bombmode_dual"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_bombmode_dual
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_label"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_label
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flakaicount"
+"Summary: int - for setting the amount of ai to spawn on a flak"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_flakaicount	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_tankgroup"
+"Summary: string - used to add a tankgroup to vehicles."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_tankgroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_chance"
+"Summary: float - chance that an exploder will explode, checked every 4 seconds or whatever script_delay is on the trigger."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_chance	
+
+// Duhoc_Assault
+/*
+=============
+///ScriptDocBegin
+"Name: .script_forcespawn"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_forcespawn
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_deleteai"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_deleteai
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_allowdeath"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_allowdeath
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_death"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_death
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_death_min"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_death_min
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_death_max"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_death_max
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_drones_min"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_drones_min
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_drones_max"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_drones_max
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_droneStartMove"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_droneStartMove
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_looping"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_looping
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_trace"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_trace
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_smokegroup"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_smokegroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_minspec_level"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_minspec_level
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_minspec_hooks_level"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_minspec_hooks_level
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_spawn_here"
+"Summary: int - for camper_spawner"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_spawn_here	
+
+// decoytown
+/*
+=============
+///ScriptDocBegin
+"Name: .script_layer"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string 	script_layer
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicleaianim"
+"Summary: string - this will be a radiant drop down list that tells the ai on the vehicle which animations to play"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string 	script_vehicleaianim  
+
+// flashbang
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_immunetoflash"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_immunetoflash
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_health"
+"Summary: int - bringing it back!"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_health 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_stopnode"
+"Summary: int - tells helicopters to stop at a node."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_stopnode 			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_turret_share"
+"Summary: string - shares turret spots for portable mgs"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_turret_share 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_turret_ambush"
+"Summary: string - shares turret spots for portable mgs"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_turret_ambush 		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_dont_link_turret"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_dont_link_turret
+
+/*
+=============
+///ScriptDocBegin
+"Name: .ambience_inner"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	ambience_inner
+
+/*
+=============
+///ScriptDocBegin
+"Name: .ambience_outer"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	ambience_outer
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mg_angle"
+"Summary: int - this gives option to start the machinegun at an angle"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_mg_angle		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_deathchain"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_deathchain
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nohealth"
+"Summary: int - makes the guy not drop health"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_nohealth	
+
+// destructible object
+
+/*
+=============
+///ScriptDocBegin
+"Name: .destructible_type"
+"Summary: string - identifier"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	destructible_type	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_destruct_collision"
+"Summary: string - set to either pre or post, goes in a destructible prefab for destructibles that move a lot when they blow up"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_destruct_collision
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_bg_offset"
+"Summary: vector - I'm using this in cobrapilot to move the background pieces into place"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+vector	script_bg_offset 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_flashbangs"
+"Summary: int - set this to > 0 to give an AI flashbangs instead of frag grenades."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_flashbangs   
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_dot"
+"Summary: float - used on targetname trigger_lookat triggers to change the fov"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_dot 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_drone"
+"Summary: int - setting to 1 makes the spawner a script drone"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_drone 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .squadnum"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	squadnum
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_hint"
+"Summary: string - put on trigger_hint"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_hint	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_anglevehicle"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_anglevehicle
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_deathflag"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_deathflag
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_delay_spawn"
+"Summary: int - Delay spawning by this long, in spawn_ai"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_delay_spawn
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_killspawner_group"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_killspawner_group
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_wheeldirection"
+"Summary: int - 1 goes forward 0 goes backwards."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_wheeldirection 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicle_lights_on"
+"Summary: string - set to a group of lights to turn them on"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string 	script_vehicle_lights_on 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicle_lights_off"
+"Summary: string - set to a group of lights to turn them off"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_vehicle_lights_off 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fixednode"
+"Summary: int - can force .fixednode on an AI"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_fixednode
+
+/*
+=============
+///ScriptDocBegin
+"Name: .fixednodesaferadius"
+"Summary: float - the safe radius"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	fixednodesaferadius
+
+/*
+=============
+///ScriptDocBegin
+"Name: .spawner_id"
+"Summary: string - using this for jeepride, guh, grunt, blarg! -nate"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string 	spawner_id 			
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicledetourgroup"
+"Summary: int - use this for telling a detour node to only detour vehicles in matching groups"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_vehicledetourgroup 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_vehicletriggergroup"
+"Summary: int - a more generic grouping.  I'm using this so that paths can be shared easier.   setting this on a node with other vehicle trigger functions will only effect vehicles in the matching group."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_vehicletriggergroup 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ghettotag"
+"Summary: string - for jeepride."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string 	script_ghettotag 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_growl"
+"Summary: int - makes a dog growl as he runs, instead of barking"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_growl
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nobark"
+"Summary: int - makes a dog not make a sound as he moves"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_nobark		
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_attackmetype"
+"Summary: string - for jeepride.  set this on nodes to tell it to fire missiles"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string 	script_attackmetype 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_shotcount"
+"Summary: int - for jeepride.  how many missiles to fire at a moving point"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_shotcount 			// for jeepride.  how many missiles to fire at a moving point
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_dontshootwhilemoving"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_dontshootwhilemoving
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_goalyaw"
+"Summary: int - set to true to set the goal yaw"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_goalyaw 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_physics"
+"Summary: float - used for exploder_chunk to use physics throw"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float 	script_physics 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_decel_fraction"
+"Summary: float - for Jeepride platforms smoother movements"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float 	script_decel_fraction 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_accel_fraction"
+"Summary: float - for Jeepride platforms smoother movements"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float 	script_accel_fraction 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_force_count"
+"Summary: string - set to true on spawner - flood spawner will not increment this spawners count if the player didnt see the guy die"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_force_count 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ammo_max"
+"Summary: string - weapon placed in radiant - max out all ammo counts, including altmode and left-hand (akimbo) ammo. Setting this will override any of the other ammo setting keys below."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_ammo_max	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ammo_clip"
+"Summary: int - weapon placed in radiant - this many rounds in the clip - must be used with script_ammo_extra"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_ammo_clip 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ammo_extra"
+"Summary: int - weapon placed in radiant - this many rounds outside the clip - must be used with script_ammo_clip"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_ammo_extra 			// weapon placed in radiant - this many rounds outside the clip - must be used with script_ammo_clip
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ammo_alt_clip"
+"Summary: int - weapon placed in radiant - this many rounds in the altweapon clip"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_ammo_alt_clip
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_ammo_alt_extra"
+"Summary: int - weapon placed in radiant - this many rounds outisde the altweapon clip"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_ammo_alt_extra
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_godmode"
+"Summary: int - makes a vehicle be god mode"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_godmode 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_node_pausetime"
+"Summary: int - used for attack routing, amount of time to wait at marked goalnode"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int 	script_node_pausetime
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_bulletshield"
+"Summary: int - used to apply toggleable bullet shields to vehicles that have them enabled."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_bulletshield 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_grenadeshield"
+"Summary: int - used to apply toggleable grenade shields to vehicles that have them enabled."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int 	script_grenadeshield  
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_deathflag_longdeath"
+"Summary: int - set to on and script_deathflag guys will notify on death OR longpaindeath"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_deathflag_longdeath 	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_deathtime"
+"Summary: int - Wait this long then die shortly after"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_deathtime
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_forcefire_delay"
+"Summary: float - how long to wait until starting forced MGs"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_forcefire_delay
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_forcefire_duration"
+"Summary: float - how long the MGs are forced to fire"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_forcefire_duration 
+
+// fog stuff
+/*
+=============
+///ScriptDocBegin
+"Name: .start_color"
+"Summary: vector - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+vector	start_color
+
+/*
+=============
+///ScriptDocBegin
+"Name: .end_color"
+"Summary: vector - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+vector	end_color
+
+/*
+=============
+///ScriptDocBegin
+"Name: .start_neardist"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		start_neardist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .end_neardist"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		end_neardist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .start_fardist"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		start_fardist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .end_fardist"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		end_fardist
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fogset_start"
+"Summary: string - fog transition from, fog set must be defined in script by create_vision_set_fog() or create_fog()"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_fogset_start
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_fogset_end"
+"Summary: string - fog transition to, fog set must be defined in script by create_vision_set_fog() or create_fog()"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_fogset_end
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_char_index"
+"Summary: int - overwrite the character index"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_char_index
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_char_group"
+"Summary: int - indicate this guy is a member of a group of same chars"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_char_group	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_rumble"
+"Summary: string - rumble file to play on an exploder"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	script_rumble 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_onlyidle"
+"Summary: int - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_onlyidle
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_duration"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float 	script_duration
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_soundalias"
+"Summary: string - play this soundalias on exploders"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string  script_soundalias
+
+/*
+=============
+///ScriptDocBegin
+"Name: .animation"
+"Summary: string - Animation applied to a model in radiant to make it animate"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string animation
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_savetrigger_timer"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float 	script_savetrigger_timer
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_mp_style_helicopter  //makes SP helicopters take less damage from bullets like MP helicopters do"
+"Summary: string - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string  script_mp_style_helicopter
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_noflip"
+"Summary: int - this symmetric destructible wont have a 50% chance of flipping 180degrees when it explodes"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int		script_noflip	
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_max_left_angle"
+"Summary: float - Max angle a shutter can swing open in this direction"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+float	script_max_left_angle
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_max_right_angle"
+"Summary: float - Max angle a shutter can swing open in this direction"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float	script_max_right_angle 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_paintergroup"
+"Summary: int - painter groups setup the _painter script"
+"Module: Stub"
+"NoteLine: painter groups are setup in a subfolder in the map source as prefabs\painter\"
+"NoteLine:  "
+"NoteLine: you can build your own.  The default spacing for the group will be set to the least amount of space between the models in the group."
+"NoteLine: add more models to the group to increase the frequency of that model of being chosen for placement."
+"NoteLine: Use just one model for a single model group."
+"NoteLine: The targetname should be \"painter_setup\""
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string script_paintergroup
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_painter_treeorient"
+"Summary: int - tells painter models to orient straight up rather than using the normals on the surface."
+"Module: Stub"
+"NoteLine: painter groups are setup in a subfolder in the map source as prefabs\painter\"
+"NoteLine:  "
+"NoteLine: you can build your own.  The default spacing for the group will be set to the least amount of space between the models in the group."
+"NoteLine: add more models to the group to increase the frequency of that model of being chosen for placement."
+"NoteLine: Use just one model for a single model group."
+"NoteLine: The targetname should be \"painter_setup\""
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int script_painter_treeorient
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_painter_maxdist"
+"Summary: int - maximum distance for painter to paint from the users view"
+"Module: Stub"
+"NoteLine: painter groups are setup in a subfolder in the map source as prefabs\painter\"
+"NoteLine:  "
+"NoteLine: you can build your own.  The default spacing for the group will be set to the least amount of space between the models in the group."
+"NoteLine: add more models to the group to increase the frequency of that model of being chosen for placement."
+"NoteLine: Use just one model for a single model group."
+"NoteLine: The targetname should be \"painter_setup\""
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+int script_painter_maxdist 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nobloodpool"
+"Summary: int - Set to true in Radiant for no blood pool"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_nobloodpool
+
+/*
+=============
+///ScriptDocBegin
+"Name: .subclass"
+"Summary: string - from aitype"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string subclass
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_visionset"
+"Summary: string - use with trigger_multiple_visionset to change to a vision file"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string script_visionset
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sun_visionset"
+"Summary: string - use with trigger_multiple_visionset to change the sun visionset"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string script_sun_visionset
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sun_delay"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float script_sun_delay
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sun_intensity"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float script_sun_intensity
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sun_falloff"
+"Summary: float - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float script_sun_falloff
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_sun_direction"
+"Summary: vector - "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+vector script_sun_direction
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_speed"
+"Summary: int - override a vehicle's speed from script"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_speed
+
+/*
+=============
+///ScriptDocBegin
+"Name: .civilian_walk_animation"
+"Summary: string - used to define which anime group ( defined in level _anim ) this civilian should use for walk loops"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	civilian_walk_animation
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_count"
+"Summary: int - count value that you can use on non-spawners. Doesn't do anything in global scripts, just available for the LD to use if desired"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_count
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_specialops"
+"Summary: int - Setting to 1 marks this as a special op only entity. Marking as 0 marks it as a non special op entity. Upon map start, will be deleted if the game mode doesn't match."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int		script_specialops 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_specialopsname"
+"Summary: string - Set this to match the name of your special ops specific script to keep it around in that map only. For entities that need to go in the main map, but only loaded in a SPECIFIC special op as opposed to all special ops. You can put in more than one name, separating with either : ; , or space."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_specialopsname
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_nodrop"
+"Summary: string - set to 1 to make this AI not drop a weapon when he dies"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_nodrop
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_modelname"
+"Summary: string - script_modelname used or dcemp - no global use"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string	script_modelname
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_allow_driver_death"
+"Summary: int - allow the driver of a vehicle to die. defaults to undefined or off."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int script_allow_driver_death
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_allow_rider_deaths"
+"Summary: int - allow the passengers of a vehicle to die. defaults to undefined or off."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int script_allow_rider_deaths
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_xray_visible"
+"Summary: int - the actor will be visible in xray (in other words, it will have SetIsVisibleInXray() called on it at spawn time)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int script_xray_visible
+
+/*
+=============
+///ScriptDocBegin
+"Name: .light_color1"
+"Summary: vector - The first light colour to use for animated light transitions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+vector	light_color1
+
+/*
+=============
+///ScriptDocBegin
+"Name: .light_color2"
+"Summary: vector - The second light colour to use for animated light transitions"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+vector	light_color2
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_threat_overlay"
+"Summary: string - Determines the type of overlay to display in Threat ID (off, auto, allies, axis)"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string  script_threat_overlay
+
+/*
+=============
+///ScriptDocBegin
+"Name: .note_message"
+"Summary: string - Message to display when show_level_notes is called"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/	
+string  note_message
+
+/*
+=============
+///ScriptDocBegin
+"Name: .note_offset"
+"Summary: vector - Positional offset of where the message will print.  Defaults to the entity's origin."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+vector  note_offset
+
+/*
+=============
+///ScriptDocBegin
+"Name: .note_color"
+"Summary: vector - Color of the note displayed when show_level_notes is called. Defaults to ( 1, 1, 1 )"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+vector  note_color
+
+/*
+=============
+///ScriptDocBegin
+"Name: .note_alpha"
+"Summary: float - Opacity (0.0 to 1.0) of the note displayed when show_level_notes is called. Defaults to 1.0"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float   note_alpha 
+
+/*
+=============
+///ScriptDocBegin
+"Name: .note_scale"
+"Summary: float - Size of the note displayed when show_level_notes is called. Defaults to 1.0"
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+float   note_scale
+
+/*
+=============
+///ScriptDocBegin
+"Name: .collmap_targetname"
+"Summary: string - Name used to generate a collmap entity for moving platforms."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string	collmap_targetname
+
+/*
+=============
+///ScriptDocBegin
+"Name: .codex_entry"
+"Summary: int - Number of codex entry for prototype codex."
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+int  codex_entry
+
+/*
+=============
+///ScriptDocBegin
+"Name: .translation"
+"Summary: string - Translation string for auto-translator. "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string translation
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_covertype"
+"Summary: string - Locked combat cover type "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string script_covertype
+
+/*
+=============
+///ScriptDocBegin
+"Name: .script_deathanim"
+"Summary: string - Locked combat death animation "
+"Module: Stub"
+"SPMP: singleplayer"
+///ScriptDocEnd
+=============
+*/
+string script_deathanim
