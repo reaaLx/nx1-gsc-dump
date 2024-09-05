@@ -2,4 +2,4 @@
 CoD NX1 (Future Warfare) MP GSC Dump
 
 ## To-Do
-- SP files
+- Partial Dump of MP/SP files (Incomplete)
