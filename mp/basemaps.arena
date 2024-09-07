@@ -1,0 +1,536 @@
+{
+	map			"mp_nx_pitstop"
+	longname	"MPUI_MP_NX_PITSTOP"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_PITSTOP"
+	mapimage	"preview_mp_nx_pitstop"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_galleria"
+	longname	"MPUI_MP_NX_GALLERIA"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_GALLERIA"
+	mapimage	"preview_mp_nx_galleria"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_stasis"
+	longname	"MPUI_MP_NX_STASIS"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_STASIS"
+	mapimage	"preview_mp_nx_stasis"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"arctic"
+}
+
+{
+	map			"mp_nx_fallout"
+	longname	"MPUI_MP_NX_FALLOUT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_FALLOUT"
+	mapimage	"preview_mp_nx_fallout"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+} 
+
+{
+	map			"mp_nx_meteor"
+	longname	"MPUI_MP_NX_METEOR"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_METEOR"
+	mapimage	"preview_mp_nx_METEOR"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}	
+
+{
+	map			"mp_nx_border"
+	longname	"MPUI_MP_NX_BORDER"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_BORDER"
+	mapimage	"preview_mp_nx_border"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_lockdown_v2"
+	longname	"MPUI_MP_NX_LOCKDOWN_V2"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_LOCKDOWN_V2"
+	mapimage	"preview_mp_nx_lockdown_v2"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_contact"
+	longname	"MPUI_MP_NX_CONTACT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_CONTACT"
+	mapimage	"preview_mp_nx_contact"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_ugvcontact"
+	longname	"MPUI_MP_NX_UGVCONTACT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt escortplus"
+	description	"MPUI_DESC_MAP_MP_NX_UGVCONTACT"
+	mapimage	"preview_mp_nx_ugvcontact"
+	mapoverlay	"compass_overlay_map_ugvcontact"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment "urban"
+}
+
+{
+	map			"mp_nx_ugvhh"
+	longname	"MPUI_MP_NX_UGVHH"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth escort escortplus hvt"
+	description	"MPUI_DESC_MAP_MP_NX_UGVHH"
+	mapimage	"preview_mp_nx_ugvhh"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+
+	map			"mp_nx_asylum"
+	longname	"MPUI_MP_NX_ASYLUM"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_ASYLUM"
+	mapimage	"preview_mp_nx_asylum"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+
+{
+	map			"mp_nx_asylum_2"
+	longname	"MPUI_MP_NX_ASYLUM_2"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_ASYLUM_2"
+	mapimage	"preview_mp_nx_asylum_2"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_bom"
+	longname	"MPUI_MP_NX_BOM"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_BOM"
+	mapimage	"preview_mp_nx_bom"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_deadzone"
+	longname	"MPUI_MP_NX_DEADZONE"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_DEADZONE"
+	mapimage	"preview_mp_nx_deadzone"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+} 
+ 
+
+{
+	map			"mp_nx_dust"
+	longname	"MPUI_MP_NX_DUST"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_DUST"
+	mapimage	"preview_mp_nx_dust"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_frontline"
+	longname	"MPUI_MP_NX_FRONTLINE"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth escort escortplus hvt"
+	description	"MPUI_DESC_MAP_MP_NX_FRONTLINE"
+	mapimage	"preview_mp_nx_frontline"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+} 
+
+{
+	map			"mp_nx_import"
+	longname	"MPUI_MP_NX_IMPORT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_IMPORT"
+	mapimage	"preview_mp_nx_import"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_lunar"
+	longname	"MPUI_MP_NX_LUNAR"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_LUNAR"
+	mapimage	"preview_mp_nx_lunar"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us_space"
+	axischar	"nx_ec_space"
+	environment	"space"
+}
+
+
+{
+	map			"mp_nx_memorial"
+	longname	"MPUI_MP_NX_MEMORIAL"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_MEMORIAL"
+	mapimage	"preview_mp_nx_memorial"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+	
+{
+	map			"mp_nx_monorail"
+	longname	"MPUI_MP_NX_MONORAIL"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_MONORAIL"
+	mapimage	"preview_mp_nx_monorail"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+	
+{
+	map			"mp_nx_sandstorm"
+	longname	"MPUI_MP_NX_SANDSTORM"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth escort escortplus hvt"
+	description	"MPUI_DESC_MAP_MP_NX_SANDSTORM"
+	mapimage	"preview_mp_nx_sandstorm"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"desert"
+}	
+	
+{
+	map			"mp_nx_seaport"
+	longname	"MPUI_MP_NX_SEAPORT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_SEAPORT"
+	mapimage	"preview_mp_nx_seaport"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+	
+	
+{
+	map			"mp_nx_skylab"
+	longname	"MPUI_MP_NX_SKYLAB"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_SKYLAB"
+	mapimage	"preview_mp_nx_skylab"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+
+{
+	map			"mp_nx_skylight"
+	longname	"MPUI_MP_NX_SKYLIGHT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_SKYLIGHT"
+	mapimage	"preview_mp_nx_skylight"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us_space"
+	axischar	"nx_ec_space"
+	environment	"space"
+}
+
+{
+	map			"mp_nx_streets"
+	longname	"MPUI_MP_NX_STREETS"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_STREETS"
+	mapimage	"preview_mp_nx_streets"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+
+{
+	map			"mp_nx_subyard"
+	longname	"MPUI_MP_NX_SUBYARD"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_SUBYARD"
+	mapimage	"preview_mp_nx_subyard"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment "urban"
+}
+	
+{
+	map			"mp_nx_ugvsand"
+	longname	"MPUI_MP_NX_UGVSAND"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt escortplus"
+	description	"MPUI_DESC_MAP_MP_NX_UGVSAND"
+	mapimage	"preview_mp_nx_ugvsand"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"socom_141_desert"
+	axischar	"opforce_composite"
+	environment "desert"
+}
+	
+{
+	map			"mp_nx_whiteout"
+	longname	"MPUI_MP_NX_WHITEOUT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_whiteout"
+	mapimage	"preview_mp_nx_whiteout"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"arctic"
+}
+
+{
+	map			"mp_nx_leg_afghan"
+	longname	"MPUI_NX_LEG_AFGHAN"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+ 	description	"MPUI_DESC_MAP_NX_LEG_AFGHAN"
+	mapimage	"preview_mp_nx_leg_afghan"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"socom_141_desert"
+	axischar	"opforce_composite"
+	environmenT	"desert"
+}
+
+
+{
+	map			"mp_nx_leg_crash"
+	longname	"MPUI_NX_LEG_CRASH"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_NX_LEG_CRASH"
+	mapimage	"preview_mp_nx_leg_crash"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"socom_141_desert"
+	axischar	"opforce_composite"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_leg_outpost"
+	longname	"MPUI_NX_LEG_OUTPOST"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_NX_LEG_OUTPOST"
+	mapimage	"preview_mp_nx_leg_outpost"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"socom_141_arctic"
+	axischar	"opforce_arctic"
+	environment	"arctic"
+}
+
+{
+	map			"mp_nx_leg_over"
+	longname	"MPUI_NX_LEG_OVER"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_NX_LEG_OVER"
+	mapimage	"preview_mp_nx_leg_over"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"socom_141_forest"
+	axischar	"opforce_airborne"
+	environment	"forest"
+}
+
+
+{
+	map			"mp_nx_leg_term"
+	longname	"MPUI_NX_LEG_TERM"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_NX_LEG_TERM"
+	mapimage	"preview_mp_nx_leg_term"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us"
+	axischar	"nx_ec"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_apt"
+	longname	"MPUI_MP_NX_APT"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_APT"
+	mapimage	"preview_mp_nx_apt"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us_specops"
+	axischar	"nx_ec_specops"
+	environment	"urban"
+}
+
+{
+	map	   		"mp_nx_binscrib"
+	longname	"MPUI_MP_NX_BINSCRIB"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_binscrib"
+	mapimage	"preview_mp_nx_binscrib"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"nx_us_specops"	
+	axischar	"nx_ec_army"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_g_assault"
+	longname	"MPUI_MP_NX_G_ASSAULT"
+	gametype	"dm glad"
+	description	"MPUI_DESC_MAP_MP_NX_G_ASSAULT"
+	mapimage	"preview_mp_nx_g_assault"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_composite"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_merc_over"
+	longname	"MPUI_MP_NX_MERC_OVER"
+	gametype	"merc"
+	description	"MPUI_DESC_MAP_MP_NX_MERC_OVER"
+	mapimage	"preview_mp_nx_blank1"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_composite"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_mercmode"
+	longname	"MPUI_MP_NX_MERCMODE"
+	gametype	"merc"
+	description	"MPUI_DESC_MAP_MP_NX_MERCMODE"
+	mapimage	"preview_mp_nx_blank1"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_composite"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_test_benk_04"
+	longname	"MPUI_MP_NX_TEST_BENK"
+	gametype	"dm war"
+	description 	"MPUI_DESC_MP_NX_TEST_BENK"
+	mapimage	"loadscreen_mp_nx_test_og_04"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_composite"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_blank1"
+	longname	"MPUI_MP_NX_BLANK1"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+	description     "MPUI_DESC_MAP_MP_NX_BLANK1"
+	mapimage        "preview_mp_nx_blank1"
+	mapoverlay      "compass_overlay_map_blank"
+	allieschar      "socom_141_arctic"
+	axischar        "opforce_arctic"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_jku"
+	longname	"MPUI_MP_NX_JKU"
+	gametype	"war"
+	description	"MPUI_DESC_MAP_MP_NX_JKU"
+	mapimage	"preview_mp_nx_jku"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"socom_141_desert"
+	axischar	"militia"
+	environment	"arctic"
+}
+
+{
+	map			"mp_nx_jpldock"
+	longname	"MPUI_MP_nx_jpldock"
+	gametype	"dm war"
+	description     "MPUI_DESC_MAP_MP_NX_JPLDOCK"
+	mapimage        "loadscreen_mp_nx_jpldock"
+	mapoverlay      "compass_overlay_map_blank"
+	allieschar      "us_army"
+	axischar        "opforce_composite"
+	environment	"urban"
+}
+
+{
+	map			"mp_nx_milota1"
+	longname	"MPUI_MP_NX_MILOTA1"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth hvt"
+	description	"MPUI_DESC_MAP_MP_NX_MILOTA1"
+	mapimage	"preview_mp_nx_milota1"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"socom_141_arctic"
+	axischar	"opforce_arctic"
+	environment	"arctic"
+}
+
+{
+	map			"mp_nx_testmap"
+	longname	"MPUI_MP_NX_TESTMAP"
+	gametype	"dm war sab sab2 dom sd sd2 hc thc ctf koth"
+	description	"MPUI_DESC_MAP_MP_NX_TESTMAP"
+	mapimage	"preview_mp_nx_testmap"
+	mapoverlay	"compass_overlay_map_blank"
+	allieschar	"us_army"
+	axischar	"opforce_composite"
+	environment	"urban"
+}
